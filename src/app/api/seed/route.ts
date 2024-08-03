@@ -4,8 +4,8 @@ import bcrypt from 'bcryptjs';
 
 export async function GET(request: Request) { 
 
-  await prisma.todo.deleteMany(); // delete * from todo
-  await prisma.user.deleteMany(); // delete del usuario.
+  await prisma.todo.deleteMany(); 
+  await prisma.user.deleteMany();
 
   const user = await prisma.user.create({
     data: {

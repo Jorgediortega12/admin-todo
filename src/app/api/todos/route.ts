@@ -26,7 +26,6 @@ export async function GET(request: Request) {
   return NextResponse.json( todos );
 }
 
-//el yup es un validador. 
 const postSchema = yup.object({
   description: yup.string().required(),
   complete: yup.boolean().optional().default(false),

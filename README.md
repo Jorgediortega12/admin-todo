@@ -31,5 +31,4 @@ npx prisma generate
 
 # Prod
 
-
 # Stage
